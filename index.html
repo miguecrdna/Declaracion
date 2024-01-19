@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Declaración</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Nos casamos mi chikibeibi :3?</title>
+  <style>
+    .body {
+      background-color: rgb(238, 216, 238);
+      text-align: center;
+    }
+
+    .body__title {
+      color: #000;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
-<body>
 
-    <div class="contenedor">
-        <p>¿Quieres ser mi esposa isa?</p>
-        <button id="yesBtn">Ci</button>
-        <button id="noBtn">Nel</button>
-    </div>
-    <script src="index.js"></script>
+<body class="body">
+  <h1 class="body__title">¿Nos casamos mi chikibeibi :3?</h1>
+  <img src="https://i.pinimg.com/564x/ad/a1/1e/ada11ee91c8b90c9afbe943ee5210895.jpg" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">Ci</button>
+  <button id="no">Mañana</button>
 
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('Sabia que ibas a decir que si Hehe');
+      alert('Y buenos dias mi cielito, Levantate >:D');
+      location.href = 'https://youtu.be/Fb3kOsbjagU?si=AxYYM1LiDiw0wPaP';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
 </body>
+
 </html>
